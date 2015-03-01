@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="MultitenantDomainModel">
+				<alt mandatory="true" name="TrackProgress">
+					<feature mandatory="true" name="BurnDown"/>
+					<feature mandatory="true" name="Kanban"/>
+					<feature mandatory="true" name="PercentCompleted"/>
+				</alt>
+				<alt mandatory="true" name="Action">
+					<and mandatory="true" name="WaterfallTask">
+						<feature mandatory="true" name="start"/>
+						<feature mandatory="true" name="PercentComplete"/>
+						<feature mandatory="true" name="Finish"/>
+					</and>
+					<and mandatory="true" name="KanbanCards">
+						<feature mandatory="true" name="Newcard"/>
+						<feature mandatory="true" name="WorkInProgress"/>
+						<feature mandatory="true" name="Done"/>
+					</and>
+					<and mandatory="true" name="ScrumStories">
+						<feature mandatory="true" name="Accepted"/>
+						<feature mandatory="true" name="InProgress"/>
+						<feature mandatory="true" name="Completed"/>
+					</and>
+				</alt>
+				<or name="LinkAction">
+					<feature mandatory="true" name="ScrumLink"/>
+					<feature mandatory="true" name="WaterfallLink"/>
+					<feature mandatory="true" name="KanbanLink"/>
+				</or>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

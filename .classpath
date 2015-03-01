@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="BurnDown.aj|Kanban.aj|PercentCompleted.aj|WaterfallTask.aj|start.aj|PercentComplete.aj|Finish.aj|KanbanCards.aj|Newcard.aj|WorkInProgress.aj|Done.aj|ScrumStories.aj|Accepted.aj|InProgress.aj|Completed.aj|LinkAction.aj|ScrumLink.aj|WaterfallLink.aj|KanbanLink.aj" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.ajdt.core.ASPECTJRT_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
